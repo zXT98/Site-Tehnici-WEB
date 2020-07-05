@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="RO">
+<head>
+<title>
+HOME
+</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+<img src="../fotografii/stickman.gif" id="stickman" width="200" height="200"/>
+<div class="container">
+
+<header>
+   <h1 class="animated bounceInDown delay-1s">PopiX Games</h1>
+	<a id="facebook" href="https://www.facebook.com/popacatalin.andrei" class="fa fa-facebook"></a>
+	<a id="instagram" href="https://www.instagram.com/popacatalin98/" class="fa fa-instagram"></a>
+	<a id="twitter" href="https://twitter.com/Popica69" class="fa fa-twitter"></a>
+</header>
+  
+
+	
+	<button class="button"<a href="Main.html" style="text-decoration:none"><span style="color:black">Home&nbsp;&nbsp;</span></a></button>
+	
+		<div class="dropdown">
+			<button class="button">Categorii</button>
+				<div class="dropdown-content">
+					<a href="rpg.html">RPG</a>
+					<a href="action.html">Action</a>
+					<a href="mmo.html">MMO</a>
+					<a href="strategy.html">Strategy</a>
+				</div>
+		</div>
+			
+		<button onclick="buy_first_5_games()" class="button">Buy the first 5 games</button>	
+		<button onclick="buy_last_5_games()" class="button">Buy the last 5 games</button>
+		<button onclick="concatenare_jocuri()" class="button">Concatenare jocuri</button>
+		<button class="button" onclick="setColor()">Schimba culoarea</button>
+		
+		<p id="concatenare"></p>
+		
+		
+		<div class="audio-player" id="song"></div>
+	  
+<section id="section-1" class="animated slideInRight bg-faded p-5 my-3">
+	<h1 id="anim-head">INTRODUCERE</h1>
+	<p id="anim-body">Salutari!! Numele meu este Popa Catalin si acesta este magazinul meu de jocuri online. In momentul de fata dispunem de 20 de jocuri, cate 5 din categorii diferite pe care le 
+	puteti gasi apasand pe butonul "Categorii". De asemenea pe site-ul nostru va puteti crea un cont pentru a putea cumpara jocurile mai usor si de asemenea am implementat
+	si un calculator in caz ca vreti sa calculati suma pe care ar trebui sa o aschitati daca vreti mai multe jocuri. Pentru alte detalii puteti sa ma contactati prin datele 
+	prezentate in sectiunea de jos. Va multumesc!!</p>
+	<button id="animateBtn" class="btn btn-primary">Animate</button>
+
+</section>
+
+<br><br>
+<br>
+<br>
+<div class = "image">
+<a href="witcher.html"><img src= "../fotografii/Witcher3.jpg" class ="btn-social" title= "The Witcher 3" /></a>
+<a href="Minecraft.html"><img src= "../fotografii/Minecraft.jpg" class ="btn-social" title = "Minecraft"/></a>
+<a href="dyl.html"><img src= "../fotografii/dyl.jpg" class ="btn-social" title = "Dying Light"/></a>
+<a href="Pillars.html"><img src= "../fotografii/Pillars.jpg" class ="btn-social" title = "Pillars of Eternity"/></a>
+<a href="Star.html"><img src= "../fotografii/Star.jpg" class ="btn-social" title = "Stardew Valley"/></a>
+<a href="cs.html"><img src= "../fotografii/cs.jpg" class ="btn-social" title= "Counter Strike" /></a>
+<a href="deceit.html"><img src= "../fotografii/deceit.jpg" class ="btn-social" title = "Deceit"/></a>
+<a href="farcry.html"><img src= "../fotografii/farcry.png" class ="btn-social" title = "FarCry 4"/></a>
+<a href="h1z1.html"><img src= "../fotografii/h1z1.png" class ="btn-social" title = "H1Z1"/></a>
+<a href="Cloud.html"><img src= "../fotografii/Cloud.png" class ="btn-social" title = "Cloud Pirates"/></a>
+<a href="911.html"><img src= "../fotografii/911.jpg" class ="btn-social" title= "911" /></a>
+<a href="down.html"><img src= "../fotografii/down.png" class ="btn-social" title = "Down Of War"/></a>
+<a href="factorio.html"><img src= "../fotografii/factorio.jpg" class ="btn-social" title = "Factorio"/></a>
+<a href="rainbow.html"><img src= "../fotografii/rainbow.jpg" class ="btn-social" title = "Rainbow Six Siege"/></a>
+<a href="thehunter.html"><img src= "../fotografii/thehunter.jpg" class ="btn-social" title = "theHunter"/></a>
+<a href="ark.html"><img src= "../fotografii/ark.jpg" class ="btn-social" title= "ARk Survival" /></a>
+<a href="conan.html"><img src= "../fotografii/conan.jpg" class ="btn-social" title = "Conan"/></a>
+<a href="dayz.html"><img src= "../fotografii/dayz.jpg" class ="btn-social" title = "DayZ"/></a>
+<a href="elder.html"><img src= "../fotografii/elder.jpg" class ="btn-social" title = "Elder Scrolls Online"/></a>
+<a href="thediv.html"><img src= "../fotografii/thediv.jpg" class ="btn-social" title = "The Division"/></a>
+
+</div>
+
+
+
+<br><br><br>
+
+<form>
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">Your email will be confidential</small>
+  </div>
+  <p id="demo"></p>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	<input type="button" value="Validare" onclick="validate()">
+	
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+  <label class="form-check-label" for="exampleRadios1">
+    Subscribe to newsletter
+  </label>
+</div>
+  
+  
+  <button type="submit" class="btn btn-primary">Submit</button>
+  
+  <br>
+  
+  <label for="customRange1">Range:</label>
+<input type="range" class="custom-range" id="customRange1">
+  
+  
+</form>
+<div id="adaugare_stergere">
+	<p id="p0">ANUNTURI</p>
+	
+	<div id="adaugare_stergere1">
+	<p id="p1">----------</p>
+	</div>
+	
+	<div id="adaugare_stergere2">
+	<p id="p2">----------</p>
+	</div>
+	
+	<div id="adaugare_stergere3">
+	<p id="p3">----------</p>
+	</div>
+</div>
+	<button class="button" onclick="removeElement1()">Sterge element 1</button>
+	<button class="button" onclick="removeElement2()">Sterge element 2</button>
+	<button class="button" onclick="removeElement3()">Sterge element 3</button>
+  
+  <br><br><br>
+  
+  
+  <div id="bottom"></div>
+  
+  <br>
+  
+  <h2> CONTACT </h2>
+  <p><strong>Nume:</strong> Popa</p>
+  <p><strong>Prenume:</strong> Catalin Andrei</p>
+  <p><strong>Email:</strong> catalinandrei98@yahoo.com</p>
+  <p><strong>Telefon:</strong> 0734129726</p>
+  <p><a id="site" href="https://github.com/zXT98/Site-Tehnici-WEB">Link site GitHub</a></p> 
+  
+  <form>
+	Value 1: <input type="text" id="value1">
+	Value 2: <input type="text" id="value2">
+	Operator:
+	<select id="operator">
+		<option value="add">Add</option>
+		<option value="min">Minus</option>
+		<option value="div">Divide</option>
+		<option value="mul">Multiply</option>
+	</select>
+	<button type="button" onclick="calc()">Calculate</button>
+  </form>
+
+<div id="result_calculator">AICI SE VA AFISA REZULTATUL </div>
+  <br>
+  <br>
+  <br>
+  
+  
+  
+  
+
+
+
+
+<footer>Copyright &copy; POPIXGAMES.COM
+</footer>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="../js/Main.js" type="text/javascript"></script>
+
+</body>
+</html>
